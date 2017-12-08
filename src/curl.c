@@ -15,6 +15,8 @@ CURL * curlInitialize(CURL *c, char *url,  struct curlWriteStruct *chunk) {
     c = curl_easy_init();
 
   curl_easy_setopt(c, CURLOPT_USERAGENT, CURL_USERAGENT);
+  curl_easy_setopt(c, CURLOPT_TIMEOUT, CURL_TIMEOUT);
+
   if ( url != NULL )
     curl_easy_setopt(c, CURLOPT_URL, url);
 
