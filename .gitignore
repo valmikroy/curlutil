@@ -1,0 +1,6 @@
+/pkg/
+/tmp/
+.idea/
+*.o
+curlutil
+VERSION
