@@ -2,6 +2,9 @@
 #define CURL_USERAGENT "curlutil/0.1 (libcurl)"
 #endif
 
+#define CURL_TIMEOUT 60
+
+
 struct curlWriteStruct {
    char *memory;
    size_t size;
